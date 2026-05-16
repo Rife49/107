@@ -25,7 +25,7 @@ function Catalog(){
         let service  = new DataService();
         let data = service.getProducts();
         setProdsToDisplay(data);// diplay all the products 
-        let cats = ["fruit", "Berry"];
+        let cats = ["Lamborghini", "Ferrari", "Mercedes"];
         setCategories(cats);
     }
 
@@ -39,7 +39,7 @@ function Catalog(){
             {
                 list.push(prod);
             }
-        }
+        }s
         setProdsToDisplay(list);
 
     }
@@ -47,11 +47,15 @@ function Catalog(){
 
     return(
         <div>
-            <h1>Check our amazing products</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h1>Check out our amazing</h1>
+                </div>
+            </div>
 
 
             <div className="row">
-                {categories.map( cat => <button key={cat} className="btn btn-primary" onClick={() => filter(cat)}> {cat} </button>)}
+                {categories.map( cat => <button key={cat} className="btn btn-dark" onClick={() => filter(cat)}> {cat} </button>)}
                 <br/>
                 {prodsToDisplay.map(prod => <Product key ={prod._id} data={prod}/> )}
                 

@@ -8,7 +8,8 @@ const GlobalContext = createContext ({
 
 
     // addProductToCart: function(){} old way 
-    addProductToCart: () => {} // standard way 
+    addProductToCart: () => {}, // standard way
+    removeProductFromCart: () => {}
 })
 
 export default GlobalContext;

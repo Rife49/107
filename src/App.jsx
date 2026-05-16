@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route} from "react-router"
 
 import About from "./pages/About";
 import Admin from "./pages/Admin";
+import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import Catalog from "./pages/Catalog";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/catalog" element={<Catalog/>} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       

@@ -25,7 +25,16 @@ function hideEmail() {
     return(
         <div>
             <h1>About Page</h1>
-            <p> Hello my name is {firstName}</p>
+            <div class="card">
+                <div class="card-body">
+                    At World of Cars & Nature, we believe great artwork should inspire
+                    emotion, passion, and adventure. Our collection combines the beauty
+                    of iconic automobiles with breathtaking natural scenery to create
+                    canvas pieces that stand out in any space. Whether you’re a car
+                    enthusiast, outdoor explorer, or someone who appreciates bold design,
+                    our mission is to bring energy and personality to your walls.
+                </div>
+            </div>
         {
             isEmailVisible == true
             ? <p>Rife90@sdgku.com</p> 

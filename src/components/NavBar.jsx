@@ -1,13 +1,29 @@
 import { useContext} from "react";
-import GlobalContext from "../state/globalContet";
+import GlobalContext from "../state/globalContext";
 
 
 import {Link} from "react-router";
+
+import { IconGardenCart } from '@tabler/icons-react';
 
 import "./NavBar.css"
 
 function NavBar(){
     const user = useContext(GlobalContext). user; //({name: "Rife", id: 66});
+    const cart = useContext(GlobalContext). cart;
+
+    function getTotalItems () {
+        let sum = 0; 
+
+        for(let index=0; index<cart.length; index++){
+            sum = sum + cart[index].quantity;
+        }
+
+        return sum;
+    }
+
+
+
     return(
         <nav className="navbar navbar-expand-lg bg-dark bg-gradient" data-bs-theme="dark">
             <div className="container-fluid">
@@ -26,8 +42,14 @@ function NavBar(){
                     </div>
                 </div>
 
-                <div className="text-white">
+                <div className="text-white d-flex justify-center align-items-center gap-1">
                     {user.name}
+                    <div>
+                        <Link to={"/cart"} className="btn btn-outline-white">
+                        <IconGardenCart stroke={2} />
+                        Cart {getTotalItems()}
+                        </Link>  
+                    </div>
                 </div>
             </div>
         </nav>

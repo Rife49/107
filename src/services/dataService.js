@@ -1,23 +1,23 @@
 const catalog =[
     {
-        "title": "Orange",
-        "category": "fruit",
-        "price": 12.99,
-        "image": "orange.png",
+        "title": "G-Wagon",
+        "category": "Mercedes",
+        "price": 250.99,
+        "image": "G-Wagon.png",
         "_id":"1" // This must be unique
     },
     {
-        "title": "Strawberry",
-        "category": "Berry",
-        "price": 13.99,
-        "image": "strawberry.png",
+        "title": "F-40",
+        "category": "Ferrari",
+        "price": 410.99,
+        "image": "Ferrari.png",
         "_id":"2" // This must be unique
     },
     {
-        "title": "Apple",
-        "category": "fruit",
-        "price": 14.99,
-        "image": "apple.png",
+        "title": "Lambo",
+        "category": "Lamborghini",
+        "price": 200.99,
+        "image": "Lambo.png",
         "_id":"3" // This must be unique
     },
 ];
